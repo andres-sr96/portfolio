@@ -1,0 +1,70 @@
+.contact {
+  padding: 6rem 2rem;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: "IBM Plex Serif", serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7bd0ff;
+  margin-bottom: 1.5rem;
+}
+
+.contact-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #c6c6cd;
+  margin-bottom: 2rem;
+}
+
+.contact-email {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f8fafc;
+  text-decoration: none;
+  padding: 0.875rem 1.75rem;
+  background: #7bd0ff;
+  color: #0f172a;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.contact-email:hover {
+  opacity: 0.8;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-links a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #7bd0ff;
+}

@@ -29,6 +29,10 @@
   opacity: 0.8;
 }
 
+.navbar-logo a.active {
+  color: #f8fafc;
+}
+
 /* Links */
 .navbar-links {
   display: flex;
@@ -73,6 +77,15 @@
 }
 
 .navbar-links a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-links a.active {
+  color: #f8fafc;
+}
+
+.navbar-links a.active::before {
   transform: scaleX(1);
   transform-origin: left;
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Hero() {
@@ -8,18 +9,18 @@ function Hero() {
           <p className="hero-availability">AVAILABILITY: OPEN FOR PROJECTS</p>
           <h1 className="hero-title">Software Developer</h1>
           <p className="hero-description">
-            I’m a software development student who enjoys building things and
+            I'm a software development student who enjoys building things and
             feel good to use. I like breaking down problems, writing code, and
-            learning new tools as I go. Most of all, I’m just always curious and
+            learning new tools as I go. Most of all, I'm just always curious and
             trying to get a little better with every project I build.
           </p>
           <div className="hero-buttons">
-            <a href="#projects" className="btn btn-primary">
+            <Link to="/projects" className="btn btn-primary">
               VIEW PROJECTS
-            </a>
-            <a href="#contact" className="btn btn-secondary">
+            </Link>
+            <Link to="/contact" className="btn btn-secondary">
               GET IN TOUCH
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hero-right">

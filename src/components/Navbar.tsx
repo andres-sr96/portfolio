@@ -1,22 +1,23 @@
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import MenuIcon from "../assets/icons/computer-code.svg";
 
 const navLinks = [
-  { label: "PROJECTS", href: "#projects" },
-  { label: "ABOUT ME", href: "#about" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "PROJECTS", to: "/projects" },
+  { label: "ABOUT ME", to: "/about" },
+  { label: "CONTACT", to: "/contact" },
 ];
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="#">ANDRES SANCHEZ</a>
+        <NavLink to="/">ANDRES SANCHEZ</NavLink>
       </div>
       <ul className="navbar-links">
         {navLinks.map((link) => (
-          <li key={link.href}>
-            <a href={link.href}>{link.label}</a>
+          <li key={link.to}>
+            <NavLink to={link.to}>{link.label}</NavLink>
           </li>
         ))}
       </ul>

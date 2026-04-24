@@ -45,7 +45,7 @@
 
 .hero-title {
   font-family: "IBM Plex Serif", serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 1.1;
@@ -100,7 +100,7 @@
 .hero-right {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .hero-image-wrapper {
