@@ -1,1 +1,4 @@
 /* Global resets */
+* {
+  margin: 0;
+}
