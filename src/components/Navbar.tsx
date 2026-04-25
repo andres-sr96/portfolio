@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import MenuIcon from "../assets/icons/computer-code.svg";
+import { icons } from "../assets/icons";
 
 const navLinks = [
   { label: "PROJECTS", to: "/projects" },
@@ -22,7 +22,7 @@ function Navbar() {
         ))}
       </ul>
       <div className="navbar-icon">
-        <img src={MenuIcon} alt="menu" className="icon" />
+        <img src={icons.menu} alt="menu" className="icon" />
       </div>
     </nav>
   );

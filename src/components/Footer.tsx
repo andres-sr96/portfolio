@@ -1,6 +1,10 @@
 import "./Footer.css";
-import GitHubIcon from "../assets/icons/github.svg";
-import LinkedInIcon from "../assets/icons/linkedin.svg";
+import { icons } from "../assets/icons";
+
+const socialLinks = [
+  { href: "https://github.com/andres-sr96", icon: icons.github, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/sanchezandres96/", icon: icons.linkedin, label: "LinkedIn" },
+];
 
 const Footer = () => {
   return (
@@ -10,24 +14,18 @@ const Footer = () => {
         <span className="footer-title">Software Developer</span>
       </div>
       <div className="footer-right">
-        <a
-          href="https://github.com/andres-sr96"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="footer-link"
-        >
-          <img src={GitHubIcon} alt="GitHub" className="footer-icon" />
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/sanchezandres96/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="footer-link"
-        >
-          <img src={LinkedInIcon} alt="LinkedIn" className="footer-icon" />
-          LinkedIn
-        </a>
+        {socialLinks.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            <img src={link.icon} alt={link.label} className="footer-icon" />
+            {link.label}
+          </a>
+        ))}
       </div>
     </footer>
   );
