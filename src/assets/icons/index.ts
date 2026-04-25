@@ -11,6 +11,7 @@ import Reading from "./reading.svg";
 import Tennis from "./tennis.svg";
 import Gaming from "./gaming.svg";
 import Coffee from "./coffee.svg";
+import ResumeIcon from "./resume.svg";
 
 export const icons = {
   menu: MenuIcon,
@@ -26,6 +27,7 @@ export const icons = {
   tennis: Tennis,
   gaming: Gaming,
   coffee: Coffee,
+  resume: ResumeIcon,
 } as const;
 
 export type IconName = keyof typeof icons;  

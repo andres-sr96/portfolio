@@ -22,7 +22,6 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="footer-link"
           >
-            <img src={link.icon} alt={link.label} className="footer-icon" />
             {link.label}
           </a>
         ))}

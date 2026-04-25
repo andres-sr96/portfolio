@@ -20,7 +20,7 @@ const projects = [
       "Real-time weather forecasting app with location-based predictions, interactive maps, and severe weather alerts.",
     image:
       "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&q=80",
-    languages: ["React", "CSS", "API"],
+    languages: ["React", "API"],
     link: "#",
     variant: "standard" as const,
   },
@@ -31,7 +31,7 @@ const projects = [
       "Productivity app for managing tasks, deadlines, and team collaboration with Kanban boards and real-time updates.",
     image:
       "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80",
-    languages: ["React", "TypeScript", "Firebase"],
+    languages: ["React", "TypeScript"],
     link: "#",
     variant: "standard" as const,
   },
@@ -42,7 +42,7 @@ const projects = [
       "Personal portfolio website showcasing projects, skills, and professional background for potential employers.",
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80",
-    languages: ["React", "TypeScript", "CSS"],
+    languages: ["React", "TypeScript"],
     link: "#",
     variant: "featured" as const,
   },
